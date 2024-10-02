@@ -1,0 +1,15 @@
+let a=[]
+let b=[]
+let c=[]
+
+for(n=0;n<=4;n++){
+  a[n]=parseInt(prompt("digite um número")) 
+  
+}
+for(n=0;n<=4;n++){
+  b[n]=parseInt(Math.random() *4)
+}
+for(n=0;n<=4;n++){
+  c[n]=a[n]*b[n]
+  console.log(`${a[n]} * ${b[n]}=${c[n]}`)
+}
