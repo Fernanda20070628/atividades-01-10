@@ -1,0 +1,10 @@
+let numeros=[]
+
+for(let n=0;n<=10;n++){
+    numeros[n]=Number(prompt("digite um número"))   
+}
+for(let n=0;n<=10;n++){
+  if(numeros[n]<0){
+     alert(`O indice ${n} armazena um valor negativo`)
+  }
+}
