@@ -1,14 +1,16 @@
 let nome=[]
 let nota=[]
-let media,soma
+let media=0.0
 
-for(let n=0;n<=2;n++){
-    nome.push(prompt("digite o nome:"))
-
+for(let n=0;n<=4;n++){
+    nome[n]=prompt("digite o nome:")
+    nota[n]=parseFloat(prompt("digite a nota:"))
+    media=media+nota[n]
 }
-for(let m=0;m<=2;m++){
-    let nota1=nota.push(Number(prompt("digite a nota:")))
-    soma=media+nota1
-    media=soma/3
-   console.log(media)
+    media=media/5
+   
+for(let n=0;n<=5;n++){
+  if(media>nota[n]){
+     alert(`${nome[n]} está abaixo da média`)
+  }
 }
